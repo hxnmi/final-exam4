@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Data_Buku" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="154f1e71-f5b9-414c-b0aa-68cbe4ca3b87">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DB_Buku_UAS"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM buku]]>
+	</queryString>
+	<field name="judul_buku" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="judul_buku"/>
+		<property name="com.jaspersoft.studio.field.label" value="judul_buku"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="buku"/>
+	</field>
+	<field name="pengarang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pengarang"/>
+		<property name="com.jaspersoft.studio.field.label" value="pengarang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="buku"/>
+	</field>
+	<field name="penerbit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="penerbit"/>
+		<property name="com.jaspersoft.studio.field.label" value="penerbit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="buku"/>
+	</field>
+	<field name="tahun_terbit" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="tahun_terbit"/>
+		<property name="com.jaspersoft.studio.field.label" value="tahun_terbit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="buku"/>
+	</field>
+	<field name="status" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="buku"/>
+		<fieldDescription><![CDATA[0 = not available, 1 = available]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-30" y="0" width="640" height="72" backcolor="#FF9A96" uuid="3cae900a-b201-41c0-8644-e71e3b1264b3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="216" y="19" width="120" height="40" uuid="4aa95d48-4253-4bc1-a9fa-4e5258a93f73"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA BUKU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="237" y="20" width="80" height="20" uuid="5044beba-6860-4f61-a73e-0296213643a0"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="20" width="80" height="20" uuid="a505f160-6f3b-4a9c-b793-f7e16b3b679d"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="20" width="80" height="20" uuid="e33aa79c-468a-49cc-9cc2-8c95d87b939b"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pengarang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="20" width="80" height="20" uuid="841dafe5-2282-49da-90a0-48ddea251a36"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun Terbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="20" width="80" height="20" uuid="9c961f05-3613-4433-a1aa-4e7dd6543cd3"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="57" y="0" width="80" height="20" uuid="4a01c4b5-a7b1-4911-aa20-2b62c07fd944"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{judul_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="80" height="20" uuid="4a01c4b5-a7b1-4911-aa20-2b62c07fd944"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="0" width="80" height="20" uuid="4a01c4b5-a7b1-4911-aa20-2b62c07fd944"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tahun_terbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="80" height="20" uuid="4a01c4b5-a7b1-4911-aa20-2b62c07fd944"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="147" y="0" width="80" height="20" uuid="4a01c4b5-a7b1-4911-aa20-2b62c07fd944"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{pengarang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

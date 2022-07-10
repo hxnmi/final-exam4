@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Data_Sewa" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="09cdef78-a3e3-40f1-8e90-47e61ca3d36c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DB_Sewa_UAS"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM sewabuku]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="nama_peminjam" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nama_peminjam"/>
+		<property name="com.jaspersoft.studio.field.label" value="nama_peminjam"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="buku_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="buku_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="buku_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="tanggal_pinjam" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="tanggal_pinjam"/>
+		<property name="com.jaspersoft.studio.field.label" value="tanggal_pinjam"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="tanggal_harus_kembali" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="tanggal_harus_kembali"/>
+		<property name="com.jaspersoft.studio.field.label" value="tanggal_harus_kembali"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="tanggal_kembali" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="tanggal_kembali"/>
+		<property name="com.jaspersoft.studio.field.label" value="tanggal_kembali"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="denda" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="denda"/>
+		<property name="com.jaspersoft.studio.field.label" value="denda"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<field name="biaya_sewa" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="biaya_sewa"/>
+		<property name="com.jaspersoft.studio.field.label" value="biaya_sewa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sewabuku"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-30" y="0" width="640" height="72" backcolor="#FF9A96" uuid="9bd2210e-f7d5-415d-b1e8-e2441ca8dd93"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="217" y="20" width="120" height="40" uuid="81008249-0f4a-4091-ba64-a2e9f391aa00"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA BUKU]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="0" width="80" height="20" uuid="07d4d04d-d07a-4234-8b37-e50d316056f3"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="0" width="50" height="20" uuid="d33f7135-8857-467a-b518-6fbf71657296"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="110" height="20" uuid="ba6bac1a-ed5b-4592-80fd-af6f128fbd5a"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Peminjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="110" height="20" uuid="f257b70d-cf1f-4efe-871d-59587ae0b5a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="112" height="20" uuid="7f8a7567-df97-47ac-bc15-d057eb5b6202"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="0" width="58" height="20" uuid="619490be-1481-4c15-99a8-7cc1bfed252b"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Denda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="74" height="20" uuid="8c943e0b-c73d-4f37-bf67-b36b73920122"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biaya Sewa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="50" height="20" uuid="364ed94c-80cb-48bd-a36d-e728d7ef4118"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="80" height="20" uuid="c5af7e0a-8009-465b-b8e9-c0f92e1349d6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{buku_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="110" height="20" uuid="e566e381-a20e-4403-87e5-6b473eca8b33"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tanggal_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="112" height="20" uuid="bbe90bfb-4014-4bc1-932c-d52f509020de"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tanggal_kembali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="0" width="110" height="20" uuid="b2bb0278-114e-4924-805e-9cf287aff75f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_peminjam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="74" height="20" uuid="b676f0a4-5de0-47a3-b7f2-0cb39b2cfc92"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{biaya_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="0" width="58" height="20" uuid="221f73c2-e4c6-4625-9975-4889bf41f056"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{denda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
